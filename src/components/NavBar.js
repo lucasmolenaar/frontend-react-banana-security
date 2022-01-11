@@ -5,7 +5,7 @@ import { AuthContext } from "../context/AuthContext";
 
 function NavBar() {
   const history = useHistory();
-  const { isAuth, signOut } = useContext(AuthContext);
+  const { isAuth, logout } = useContext(AuthContext);
 
   console.log(isAuth);
 
@@ -40,7 +40,7 @@ function NavBar() {
             <div>
               <button
                   type="button"
-                  onClick={signOut}
+                  onClick={logout}
               >
                 Log uit
               </button>
