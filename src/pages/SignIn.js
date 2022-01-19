@@ -15,15 +15,11 @@ function SignIn() {
                 password: data.password
             })
 
-            console.log(result);
             login(result.data.accessToken);
 
         } catch (e) {
             console.error(e.response);
         }
-
-        console.log(data);
-
     }
 
   return (
